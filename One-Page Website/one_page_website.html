@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The New Butter</title>
+</head>
+
+<body>
+
+  <!-- NAV (HTML bookmarks) -->
+  <nav>
+    <ul>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#gallery">GALLERY</a></li>
+      <li><a href="#video">VIDEO</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <hr />
+
+  <!-- HOME SECTION -->
+  <header id="home">
+    <h1>The New Butter</h1>
+    <p>The New Butter is a pop-up dining experience.</p>
+    <p>
+      Join Chef Forest Moher and our staff for a night you won’t forget.
+      Each event is catered to your needs and can take place in your home or event space.
+    </p>
+    <p>Use the navigation above to explore the page and contact us below.</p>
+  </header>
+
+  <hr />
+
+  <!-- GALLERY SECTION (pictures) -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p><strong>Click to Enlarge</strong></p>
+    <p>Here are a few featured dishes from recent events.</p>
+
+    <!-- Images go in: images/food1.jpg, images/food2.jpg, images/food3.jpg -->
+    <img src="images/food1.jpg" alt="Featured dish 1" width="220" />
+    <img src="images/food2.jpg" alt="Featured dish 2" width="220" />
+    <img src="images/food3.jpg" alt="Featured dish 3" width="220" />
+  </section>
+
+  <hr />
+
+  <!-- VIDEO SECTION -->
+  <section id="video">
+    <h2>Video</h2>
+    <p>Watch a short behind-the-scenes video.</p>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/watch?v=xPPLbEFbCAo"
+      title="YouTube video player"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+
+    <p>
+      Direct link:
+      <a href="https://www.youtube.com/watch?v=xPPLbEFbCAo" target="_blank">Watch on YouTube</a>
+    </p>
+  </section>
+
+  <hr />
+
+  <!-- CONTACT SECTION (form) -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Please contact us to set up an event today.</p>
+
+    <form action="#" method="post">
+      <p>
+        <label for="name">Name</label><br />
+        <input type="text" id="name" name="name" required />
+      </p>
+
+      <p>
+        <label for="email">Email</label><br />
+        <input type="email" id="email" name="email" required />
+      </p>
+
+      <p>
+        <label for="phone">Phone Number</label><br />
+        <input type="tel" id="phone" name="phone" />
+      </p>
+
+      <p>
+        <label for="message">Message</label><br />
+        <input type="text" id="message" name="message" />
+      </p>
+
+      <p>
+        <label>
+          <input type="checkbox" name="terms" required />
+          I agree to the terms and conditions.
+        </label>
+      </p>
+
+      <p>
+        <input type="submit" value="Submit" />
+      </p>
+    </form>
+  </section>
+
+  <hr />
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 The New Butter</p>
+  </footer>
+
+</body>
+</html>
