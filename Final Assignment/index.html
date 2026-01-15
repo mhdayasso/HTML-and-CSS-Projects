@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mohamad Ayasso | Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__brand">Mohamad Ayasso</div>
+
+    <nav class="nav__links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+        <a href="#github">GitHub</a>
+      <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+  <!-- HOME / HERO -->
+  <section id="home" class="hero">
+
+    <video class="hero__video" autoplay muted loop playsinline>
+      <source src="video/background.mp4" type="video/mp4" />
+    </video>
+
+      <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <h1>Hi, I’m <span class="accent">Mohamad</span>.</h1>
+        <p>
+          I build clean, responsive websites using HTML, CSS, and Bootstrap.
+        </p>
+
+      <div class="hero__buttons">
+        <a class="btn" href="#projects">See my work</a>
+          <a class="btn btn--ghost" href="#contact">Contact me</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container split">
+      <div>
+        <h2>About</h2>
+        <p>
+          I’m learning web development with a focus on HTML, CSS, and Bootstrap.
+          I enjoy building clean, responsive pages and polishing details like layout,
+          spacing, and hover effects. I’m looking for entry-level roles or small projects
+          where I can keep improving and ship real websites.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- GITHUB -->
+  <section id="github" class="section section--alt">
+    <div class="container">
+      <h2>GitHub</h2>
+      <p>
+        You can find my code, projects, and progress here:
+      </p>
+
+      <a class="btn" href="https://github.com/mhdayasso" target="_blank" rel="noreferrer">
+        Visit my GitHub
+      </a>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="grid">
+        <a class="project" href="#" target="_blank" rel="noreferrer">
+          <img src="images/project1.jpg" alt="Screenshot of Project 1" />
+          <div class="project__meta">
+            <h3>NovaBite Café</h3>
+            <p>
+              A modern café website with a full menu, featured specials, and a simple
+              contact/reservations section. Built to look great on mobile with clean
+              typography and smooth hover effects.
+            </p>
+          </div>
+        </a>
+
+          <a class="project" href="#" target="_blank" rel="noreferrer">
+            <img src="images/project2.jpg" alt="Screenshot of Project 2" />
+            <div class="project__meta">
+              <h3>Skyline Cinema</h3>
+              <p>
+                A movie theater site with “Now Showing” cards, showtimes, and promo banners.
+                Includes a responsive layout and a polished navigation/menu experience.
+              </p>
+            </div>
+          </a>
+
+        <a class="project" href="#" target="_blank" rel="noreferrer">
+          <img src="images/project3.jpg" alt="Screenshot of Project 3" />
+          <div class="project__meta">
+            <h3>GearShift Auto Studio</h3>
+            <p>
+              A car detailing/auto shop landing page with service packages, before/after gallery,
+              and a quote request form. Designed with bold visuals, clear call-to-action buttons,
+              and a simple project showcase.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Want to work together? Send me a message.</p>
+
+      <form class="form" action="#" method="post">
+        <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+        <button class="btn" type="submit">Send</button>
+      </form>
+
+      <footer class="footer">
+        <p>© <span id="year"></span> Mohamad</p>
+      </footer>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
